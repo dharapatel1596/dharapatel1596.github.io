@@ -1,3 +1,2 @@
-theme: jekyll-theme-minimal
-title: This is my test cv
-description: This cv will be shared with employers
+kramdown:
+  syntax_highlighter: codera

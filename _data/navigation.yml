@@ -1,0 +1,8 @@
+- name: Home
+  link: /
+- name: 📃 About
+  link: /about.html
+- name: Education
+  link: /education.html
+- name: Work Experience
+  link: /experience.html

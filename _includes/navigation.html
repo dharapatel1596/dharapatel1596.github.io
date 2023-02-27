@@ -1,0 +1,78 @@
+<!-- <nav>
+    {% for item in site.data.navigation %}
+      <a href="{{ item.link }}" {% if page.url == item.link %}class="current"{% endif %}>
+        {{ item.name }}
+      </a>
+    {% endfor %}
+</nav> -->
+<div class="container-fluid">
+  <div class="row full-height">
+    <div class="col-auto col-md-3 col-xl-3 px-sm-3 px-0 bg-dark">
+      <div class="header-photo mt-4 text-center">
+        <img src="assets/images/Dharaben_Patel.png" alt="Dharaben Patel" />
+      </div>
+      <div class="text-white text-center mt-3">
+        <h4>Dharaben Patel</h4>
+        <p>M.Sc. Mechanical Eng. <br>(Profile: Mechatronics)</p>
+      </div>
+      <div class="text-center">
+        <a href="https://www.linkedin.com/in/dharaben-patel-046297155/" target="_blank"><i
+            class="bi bi-linkedin icon-blue large-icon"></i></a>
+        <a href="https://www.xing.com/profile/Dharaben_Patel/cv" target="_blank"><img src="assets/images/xing.png"
+            class="large-image-icon" alt="Xing" /></a>
+      </div>
+      <div class="text-white text-center mt-4">
+        dharapatel1596@gmail.com
+      </div>
+      <div class="text-white text-center">
+        +4917643 830130
+      </div>
+      <div class="text-white text-center mt-2">
+        <p>Geibelstr. 28 <br>47057 Duisburg</p>
+      </div>
+    </div>
+    <div class="col-auto col-md-9 col-xl-9 px-sm-9 px-0 full-height">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <!--<a {% if page.url == item.link %} class="nav-link current activePage" {% endif %} href="/">About me</a>-->
+                <a {% if page.url=='/' %} class="nav-link current activePage" {% else %} class="nav-link" {% endif %}
+                  href="/">About me</a>
+              </li>
+              <li class="nav-item">
+                <a {% if page.url=='/experience.html' %} class="nav-link current activePage" {% else %} class="nav-link"
+                  {% endif %} href="/experience.html">Work Experience</a>
+              </li>
+              <li class="nav-item">
+                <a {% if page.url=='/education.html' %} class="nav-link current activePage" {% else %} class="nav-link"
+                  {% endif %} href="/education.html">Education</a>
+              </li>
+              <li class="nav-item">
+                <a {% if page.url=='/projects.html' %} class="nav-link current activePage" {% else %} class="nav-link"
+                  {% endif %} href="/projects.html">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a {% if page.url=='/achievements.html' %} class="nav-link current activePage" {% else %}
+                  class="nav-link" {% endif %} href="/achievements.html">Achievements</a>
+              </li>
+              <li class="nav-item">
+                <a {% if page.url=='/skills.html' %} class="nav-link current activePage" {% else %} class="nav-link" {%
+                  endif %} href="/skills.html">Skills & Hobbys</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="container-fluid">
+        {{ content }}
+      </div>
+    </div>
+  </div>
+</div>

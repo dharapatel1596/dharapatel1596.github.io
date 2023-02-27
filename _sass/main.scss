@@ -1,0 +1,86 @@
+.current {
+  color: red;
+}
+
+.header-photo img {
+  max-height: 100%;
+  max-width: 70%;
+  background-color: #fff;
+  // border: 3px solid #fff;
+  border-radius: 20px;
+}
+
+.text-white {
+  color: #fff;
+}
+
+.icon-blue {
+  color: #0d6efd;
+}
+
+.large-icon {
+  font-size: 32px;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+.large-image-icon {
+  height: 32px;
+  width: 32px;
+  // margin-top: -16px;
+  // margin-left: 10px;
+}
+
+.full-height {
+  min-height: 100vh;
+}
+
+.page-content {
+  padding: 30px 0;
+  flex: 1 0 auto;
+  display: flex;
+}
+
+.nav-margin {
+  margin-left: 337px;
+}
+
+.custom-table th,
+.custom-table td {
+  padding-left: 40px;
+  min-width: 200px;
+  text-align: justify;
+}
+
+.skill-table th,
+.skill-table td {
+  padding-left: 40px;
+  text-align: justify;
+}
+
+table {
+  margin-top: 50px;
+}
+
+.fade-in-image {
+  animation: fadeIn 5s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.nav-link:hover {
+  //text-decoration: underline;
+  //text-underline-offset: 10px;
+  border-bottom: solid; 
+  border-width: 1px;
+}
+
+.activePage { font-weight: bold; border-bottom: solid; border-width: 1px;}
